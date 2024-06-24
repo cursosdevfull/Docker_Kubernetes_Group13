@@ -1,0 +1,10 @@
+get http://localhost:3000/select
+
+### Insertar un registro
+post http://localhost:3000/insert
+Content-Type: application/json
+
+{
+    "name": "Carlos",
+    "email": "carlog@email.com"
+}
