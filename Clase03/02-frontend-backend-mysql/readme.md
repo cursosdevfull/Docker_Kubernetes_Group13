@@ -3,7 +3,7 @@
 ### Primer intento de frontend
 
 ```
-docker run -d --name frontend -p 9000:80 -v $(pwd -W)/frontend:/usr/share/nginx/html nginx:alpine
+docker run -d --name frontend -p 9000:80 -v $(pwd -W)/web:/usr/share/nginx/html nginx:alpine
 ```
 
 ### Crear imagen de backend
