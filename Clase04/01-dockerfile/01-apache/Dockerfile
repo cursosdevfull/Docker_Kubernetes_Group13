@@ -1,6 +1,6 @@
-FROM centos:7
+FROM ubuntu:24.04
 
-RUN yum update -y && yum install -y httpd
+RUN apt-get update -y && apt-get install apache2 -y
 
 COPY ./html /var/www/html
 

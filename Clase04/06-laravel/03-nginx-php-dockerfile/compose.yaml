@@ -13,8 +13,6 @@ services:
       context: ./dockerfiles
       dockerfile: php.dockerfile
     container_name: php-fpm
-    ports:
-      - "9000:9000"
     volumes:
       - ./src:/var/www/html
 
