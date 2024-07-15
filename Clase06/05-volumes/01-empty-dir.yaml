@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: server-web
+spec:
+  containers:
+    - name: web
+      image: nginx:alpine
+      volumeMounts:
+        - mountPath: /var/log/nginx
+          name: vol-log
+  volumes:
+    - name: vol-log
+      emptyDir: {}
